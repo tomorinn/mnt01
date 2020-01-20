@@ -1,0 +1,23 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.main {
+  background-image: url("/backimages/night-with-moon.png");
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+.main-title {
+  color: gray;
+  margin-bottom: 100px;
+}
+
+.btn {
+  background-color: white;
+}
+
+.about {
+  background-color: rgb(40,40,40);
+  height: 1000px;
+}
