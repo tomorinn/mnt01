@@ -1,0 +1,95 @@
+// Place all the styles related to the gate controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+a {
+  text-decoration: none;
+}
+
+.background {
+  background-color: rgb(70,70,120);
+  padding: 100px 0 0 0;
+}
+
+.stone {
+  background-color: rgb(150,150,150);
+  width: 850px;
+  height:1200px;
+  margin: auto;
+}
+
+.spells {
+  font-size: 100px;
+  font-family: 'Ubuntu Mono', monospace;
+  color: rgb(100,100,100);
+  cursor: pointer;
+  text-align: center;
+}
+
+.mn-sentence p {
+  flow: left;
+  display: inline-block;
+  height: 30px;
+}
+
+.rip-sentence p {
+  flow: left;
+  display: inline-block;
+  height: 30px;
+}
+
+.hint_message p {
+  font-size: 30px;
+}
+
+.numbers {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.number {
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.num {
+  flow: left;
+  display: inline-block;
+}
+
+.arrows {
+  text-align: center;
+  display: none;
+}
+
+//arrow操作のためのクラス
+.reverse {
+  transform: scale(-1,1);
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.reverse_rotate {
+  transform: scale(-1,1) rotate(-90deg);
+}
+
+.clear-whiteout {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+// .rotate-90 {
+//   transform: rotate(90deg);
+// }
+// .rotate-180 {
+//   transform: rotate(180deg);
+// }
+// .rotate-270 {
+//   transform: rotate(270deg);
+// }

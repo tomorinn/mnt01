@@ -1,0 +1,51 @@
+// Place all the styles related to the myroom controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.roombase {
+  background-color: #6c3524;
+  padding: 100px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.room-user {
+  background-color: #ea5550;
+  width: 45%;
+  height: 80%;
+  display: inline-block;
+  float: left;
+  margin-right: 10%;
+}
+
+.room-user h2 {
+  margin: 100px 30px;
+  font-size: 40px;
+}
+
+.room-user p {
+  font-size: 30px;
+}
+
+.room-hint {
+  background-color: #fcc800;
+  width: 45%;
+  height: 80%;
+  display: inline-block;
+  float: left;
+}
+
+.room-hint h2 {
+  margin: 30px;
+  font-size: 30px;
+}
+
+.room-hint li {
+  margin: 30px;
+  margin-top: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}

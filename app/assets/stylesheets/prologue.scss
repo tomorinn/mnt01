@@ -1,0 +1,18 @@
+// Place all the styles related to the prologue controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.prologue_back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(30,30,30);
+  text-align: center;
+  padding: 20%;
+}
+
+.prologue_back p {
+  color: white;
+  font-size: 30px;
+}

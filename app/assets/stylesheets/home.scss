@@ -1,23 +1,267 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+//ヘッダー
+header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(70,70,20);
+
+}
+
+.header-logo {
+  float: left;
+  color: gold;
+  //background-color: white;
+  font-size: 20px;
+  width: 200px;
+  height:60px;
+  display: block;
+}
+.header-menu {
+  list-style-type: none;
+  position: fixed;
+  top: -16px;
+  right: 0;
+}
+.header-menu li {
+  float: right;
+  color: gold;
+  width: 130px;
+  //background-color: white;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+
+
+//ホーム画面
 .main {
   background-image: url("/backimages/night-with-moon.png");
   background-size: cover;
   height: 800px;
   text-align: center;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .main-title {
   color: gray;
+  padding-top: 50px;
   margin-bottom: 100px;
+  font-size: 50px;
+  font-family: fantasy;
 }
 
 .btn {
-  background-color: white;
+  padding-top: 15px;
+  color: white;
+  margin: 50px auto;
+  width: 250px;
+  height: 50px;
+  display: block;
+  border-radius: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background-color: forestgreen;
+}
+
+.float-clear {
+  clear: left;
+}
+
+.login-parts {
+  float: left;
+  height: 20px;
+  width: 200px;
+}
+
+.login-enter {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#login-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.login-form {
+  background-color: burlywood;
+  height: 300px;
+  width: 500px;
+  margin: 300px auto;
+  position: relative;
+  text-align: center;
+  padding: 30px;
+}
+
+.login-form h1 {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.login-form input {
+  display: block;
+  margin: 10px auto;
+}
+
+#close-login {
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  border: solid 1px gray;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#signup-btn {
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 80px;
+  float: right;
+  border: solid 1px sienna;
+  width: 100px;
+}
+
+#signup-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+#close-signup {
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  cursor: pointer;
+  border: solid 1px gray;
+  padding: 10px;
+}
+
+.signup-form {
+  background-color: burlywood;
+  height: 300px;
+  width: 500px;
+  margin: 300px auto;
+  position: relative;
+  text-align: center;
+  padding: 30px;
+}
+
+
+.signup-notification {
+  font-size: 15px;
+  color: gray;
+}
+
+
+.show-btn {
+  background-color: darkorange;
 }
 
 .about {
   background-color: rgb(40,40,40);
   height: 1000px;
+  position: absolute;
+  top: 800px;
+  color: gold;
+  padding: 100px;
+}
+
+//ネットから引用
+.about-town h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 350px;
+}
+
+.about-town h2:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 300px;
+  height: 1px;
+  background-color: gold;
+  left: 0;
+}
+
+.about-town h2:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 300px;
+  height: 1px;
+  background-color: gold;
+  right: 0;
+}
+
+.about-content {
+  height: 300px;
+}
+.about-content p {
+  float: left;
+  display: inline-block;
+  width: 35%;
+  margin: 50px 50px 50px 150px;
+}
+.about-content img {
+  float: left;
+  display: inline-block;
+}
+
+
+
+//フッター
+footer {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(50,20,20);
+  left: 0;
+  right: 0;
+  padding: 10px 200px;
+}
+
+.flash {
+  color: white;
+  font-size: 20px;
+  background-color: rgb(30,15,15);
+  height: 80px;
+  width: 70%;
+  padding: 10px;
 }

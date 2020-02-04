@@ -1,0 +1,23 @@
+// Place all the styles related to the townA controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.a_street {
+  background-color: #4d4398;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 300px;
+}
+
+.a_street h1 {
+  color: white;
+  font-size: 20px;
+  float: left;
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+}

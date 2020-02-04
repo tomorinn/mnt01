@@ -1,20 +1,66 @@
 <div class="main">
 
   <div class="main">
-    <div class="main-title">
-      <h1>Mid Night Town 01</h1>
+    <div id="login-modal">
+      <div class="login-form">
+        <p id="close-login">close</p>
+        <h1>ログイン</h1>
+        <%= form_tag("/login") do %>
+        <p class="login-parts">Email</p>
+        <input class="login-parts" type="email" name="email" value="">
+        <div class="float-clear"></div>
+        <p class="login-parts">Password</p>
+        <input class="login-parts" type="password" name="password" value="">
+        <div class="float-clear"></div>
+        <input class="login-enter" type="submit" name="" value="LOGIN">
+        <% end %>
+        <p id="signup-btn">新規登録</p>
+      </div>
+    </div>
+    <div id="signup-modal">
+      <div class="signup-form">
+        <%= form_tag("/create") do %>
+        <p id="close-signup">close</p>
+        <h2>新規登録</h2>
+        <p class="signup-notification">登録できない場合、すでにそのemailが使われている可能性があります。</p>
+        <p class="login-parts">Name</p>
+        <input class="login-parts" type="" name="name" value="">
+        <div class="float-clear"></div>
+        <p class="login-parts"> Email</p>
+        <input class="login-parts" type="email" name="email" value="">
+        <div class="float-clear"></div>
+        <p class="login-parts">Password</p>
+        <input class="login-parts" type="password" name="password" value="">
+        <div class="float-clear"></div>
+        <input type="submit" name="" value="SIGN UP">
+        <% end %>
+      </div>
     </div>
 
-    <div class="signup-btn btn">
-      <p>enter this town</p>
+    <div class="main-title">
+      <h1>Mid Night Town</h1>
     </div>
-    <div class="show-btn btn">
-      <p>about this town</p>
-    </div>
+    <p id="login-show" class="signup-btn btn">町に入る</p>
+    <p id="show-town" class="show-btn btn">町について</p>
   </div>
   <div class="about">
     <div class="about-town">
+      <h2>ミッドナイトタウンとは？</h2>
+      <div class="about-content">
+        <p>闇の住人達がひっそりと謎に囲まれて生活している町。
+          公園や博物館、隣の家まで謎に満ちています。
+          それらを解き明かすとどうなるのかは、ぜひご自分の目で確かめてみてください。。
+          町に入ることが出来れば、ですが。</p>
+        <img src="/number_0.png" alt="">
+      </div>
 
+      <h2>謎が解けないときは？</h2>
+      <div class="about-content">
+        <p>町を探索する中で解き明かすことが難しい謎に出会うこともあるでしょう。
+          そんなときは一度マイホームに戻り、ヒントが載っている不思議な本を開いてみてください。
+          ただし、ヒントを見るには対価も必要なことをお忘れなく。</p>
+        <img src="/number_0.png" alt="">
+      </div>
     </div>
     <div class="about-me">
 
