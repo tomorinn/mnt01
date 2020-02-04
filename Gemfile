@@ -65,6 +65,8 @@ gem 'bcrypt'
 
 gem 'unicorn'
 
+gem 'therubyracer'
+
 # capistrano
   gem "capistrano", "~> 3.8"
   gem "capistrano-rails"

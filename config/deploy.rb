@@ -9,6 +9,10 @@ set :repo_url, "git@github.com:tomorinn/mnt01.git"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/var/www/mnt01_app"
+set :rbenv_ruby, '2.5.3'
+set :rbenv_map_bins, %w(rake gem bundle ruby rails)
+set :rbenv_roles, :all
+
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
