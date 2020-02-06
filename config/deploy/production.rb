@@ -7,6 +7,9 @@ server "tomorin", user: "root", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
+set :unicorn_rack_env, "production"
+set :unicorn_roles, :spider_web
+
 namespace :deploy do
   task :restart do
     invoke ‘unicorn:legacy_restart’

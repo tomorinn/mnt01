@@ -13,6 +13,8 @@ set :rbenv_ruby, '2.5.3'
 set :rbenv_map_bins, %w(rake gem bundle ruby rails)
 set :rbenv_roles, :all
 
+set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
+set :unicorn_config_path, "config/unicorn.rb"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
