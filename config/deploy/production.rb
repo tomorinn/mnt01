@@ -8,11 +8,13 @@ server "tomorin", user: "root", roles: %w{app db web}
 # server "db.example.com", user: "deploy", roles: %w{db}
 
 set :unicorn_rack_env, "production"
-set :unicorn_roles, :spider_web
+set :unicorn_roles, :web
+
+after 'deploy:publishing', 'deploy:restart'
 
 namespace :deploy do
   task :restart do
-    invoke ‘unicorn:legacy_restart’
+    invoke 'unicorn:restart'
   end
 end
 
