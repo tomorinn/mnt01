@@ -1,4 +1,4 @@
-@app_path = "/var/www/mnt_01_app"
+@app_path = "/var/www/mnt01_app"
 worker_processes 2
 working_directory "#{@app_path}/current"
 pid               "#{@app_path}/current/tmp/pids/unicorn.pid"
