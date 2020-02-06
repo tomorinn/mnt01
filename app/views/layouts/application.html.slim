@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title
+      | Mnt01App
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    header
+      .header-logo
+        p
+          | ミッドナイトタウン
+      ul.header-menu
+        - if @current_user
+          li
+            = link_to("ログアウト", "/logout", {method: :post})
+          - if @current_user.level >= 2
+            li
+              = link_to("マイルーム", "/myroom/room", data: {"turbolinks" => false})
+            li
+              = link_to("町へ", "/town_a/street", data: {"turbolinks" => false})
+        - else
+          li#header-login-show
+            | ログイン
+    footer
+      .flash
+        p#flash-message
+          = flash[:message]
+    = yield

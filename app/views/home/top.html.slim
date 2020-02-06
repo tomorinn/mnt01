@@ -1,0 +1,64 @@
+.main
+  .main
+    #login-modal
+      .login-form
+        p#close-login
+          | close
+        h1
+          | ログイン
+        = form_tag("/login") do
+          p.login-parts
+            | Email
+          input.login-parts[type="email" name="email" value=""]
+          .float-clear
+          p.login-parts
+            | Password
+          input.login-parts[type="password" name="password" value=""]
+          .float-clear
+          input.login-enter[type="submit" name="" value="LOGIN"]
+        p#signup-btn
+          | 新規登録
+    #signup-modal
+      .signup-form
+        = form_tag("/create") do
+          p#close-signup
+            | close
+          h2
+            | 新規登録
+          p.signup-notification
+            | 登録できない場合、すでにそのemailが使われている可能性があります。
+          p.login-parts
+            | Name
+          input.login-parts[type="" name="name" value=""]
+          .float-clear
+          p.login-parts
+            |  Email
+          input.login-parts[type="email" name="email" value=""]
+          .float-clear
+          p.login-parts
+            | Password
+          input.login-parts[type="password" name="password" value=""]
+          .float-clear
+          input[type="submit" name="" value="SIGN UP"]
+    .main-title
+      h1
+        | Mid Night Town
+    p#login-show.signup-btn.btn
+      | 町に入る
+    p#show-town.show-btn.btn
+      | 町について
+  .about
+    .about-town
+      h2
+        | ミッドナイトタウンとは？
+      .about-content
+        p
+          | 闇の住人達がひっそりと謎に囲まれて生活している町。 公園や博物館、隣の家まで謎に満ちています。 それらを解き明かすとどうなるのかは、ぜひご自分の目で確かめてみてください。。 町に入ることが出来れば、ですが。
+        img[src="/number_0.png" alt=""]
+      h2
+        | 謎が解けないときは？
+      .about-content
+        p
+          | 町を探索する中で解き明かすことが難しい謎に出会うこともあるでしょう。 そんなときは一度マイホームに戻り、ヒントが載っている不思議な本を開いてみてください。 ただし、ヒントを見るには対価も必要なことをお忘れなく。
+        img[src="/number_0.png" alt=""]
+    .about-me
