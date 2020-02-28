@@ -18,6 +18,8 @@
           input.login-enter[type="submit" name="" value="LOGIN"]
         p#signup-btn
           | 新規登録
+        p#guest-signup-btn
+          | ゲストはこちら
     #signup-modal
       .signup-form
         = form_tag("/create") do
@@ -44,7 +46,7 @@
       h1
         | Mid Night Town
     p#login-show.signup-btn.btn
-      | 町に入る
+      | 町に入る!
     p#show-town.show-btn.btn
       | 町について
   .about
@@ -60,5 +62,5 @@
       .about-content
         p
           | 町を探索する中で解き明かすことが難しい謎に出会うこともあるでしょう。 そんなときは一度マイホームに戻り、ヒントが載っている不思議な本を開いてみてください。 ただし、ヒントを見るには対価も必要なことをお忘れなく。
-        img[src="/number_0.png" alt=""]
+        = image_tag("number_0.png")
     .about-me

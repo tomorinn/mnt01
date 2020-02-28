@@ -21,7 +21,9 @@ $(function() {
   $('#close-login').click(function () {
     $('#login-modal').fadeOut();
   });
-
+  $('#guest-signup').click(function () {
+    window.location.href = '/prologue/begin';
+  });
   $('#signup-btn').click(function() {
     $('#signup-modal').show();
     $('#login-modal').hide();
